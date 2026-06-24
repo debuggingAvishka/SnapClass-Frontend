@@ -45,7 +45,7 @@ h1,h2,h3,h4{
     width: auto;
 }
 
-.logo text{
+.logo-text{
     font-family: 'Climate Crisis', sans-serif;
     font-size:1.6rem;
     color:white;
@@ -78,6 +78,7 @@ h1,h2,h3,h4{
     align-items: center;
     gap: 8px;
     white-space:nowrap;
+    text-decoration:none;
 }
 
 .btn-pill:hover{
@@ -107,7 +108,9 @@ h1,h2,h3,h4{
     color:var(--primary);
     margin-bottom: 32px;
 }
-
+.hero{
+    position:relative;
+}
 .hero h1{
     font-size: 5rem;
     color: black;
@@ -160,12 +163,13 @@ h1,h2,h3,h4{
 
 .floating-card {
     position:absolute;
-    width: 320px;
+    width: 250px;
     background-color: white;
     padding: 14px;
     border-radius: 36px;
     border: 1px solid #e5e7eb;
     overflow: hidden;
+    
 }
 
 .floating-card img{
@@ -186,7 +190,43 @@ h1,h2,h3,h4{
     right:40px;
     bottom: 15%;
 }
+/*  PURPLE SECTION*/
 
+.purple-section{
+    background: var(--primary);
+    color:white;
+    text-align:center;
+    padding:100px 80px;
+    border-radius: 80px;
+    margin:40px;
+}
+
+
+.purple-section h1{
+    font-size: 3.5rem;
+    margin-bottom: 24px;
+    color:white;
+}
+
+.purple-section p{
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.btn-white{
+    background-color: white;
+    color: var(--primary);
+    padding: 18px 40px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+
+/*FOOTER SECTION*/
 .main-footer{
     padding: 10px 80px 40px;
     background-color: black;
@@ -221,7 +261,7 @@ h1,h2,h3,h4{
     font-size: 1.1rem;
     color: white;
     margin-bottom: 32px;
-    font-family: 800;
+    font-weight: 800;
 }
 
 .footer-links ul{
@@ -246,7 +286,414 @@ h1,h2,h3,h4{
 }
 
 .footer-bottom p{
-    columns : #999999;
+    color : #999999;
     font-size: 0.9rem;
     font-weight:500;
+}
+
+/* FEATURES SECTION */
+
+.features{
+    padding:120px 80px;
+    background-color: white;
+    text-align:center;
+}
+
+.features h2{
+    font-size: 3.5rem;
+    margin-bottom: 60px;
+}
+
+.feature-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:40px;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.feature-card{
+    padding:60px 40px;
+    border-radius: 40px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+}
+
+.f-icon-box{
+    width: 80px;
+    height: 80px;
+    background-color: #f8faff;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+    font-size: 2.5rem;
+}
+
+.feature-card h3{
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+    font-weight: 800;
+}
+
+.feature-card p{
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* TECH STACK SECTION */
+
+.tech-stack{
+    padding: 80px 40px;
+    background-color: #7c4dff;
+    border-radius: 60px;
+    margin:40px;
+    text-align: center;
+}
+
+.tech-stack h2{
+    font-size: 3.3rem;
+    margin-bottom: 12px;
+    color: white;
+}
+
+.tech-stack .section-tag{
+    color: white;
+    font-weight: 700;
+}
+
+.tech-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    max-width: 1200px;
+    margin:40px auto 0;
+}
+
+.tech-item{
+    background-color: rgba(255,255,255,0.15);
+    padding:30px 20px;
+    border-radius: 30px;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    color: white;
+}
+
+.t-icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    background-color: white;
+    min-width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.tech-card h4{
+    font-size: 1.15rem;
+    margin-bottom: 6px;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+}
+
+.tech-tag{
+    display: inline-block;
+    background-color: #4BB786;
+    color: white;
+    border-radius: 8px;
+    font-size: 0.65rem;
+    margin-top: 10px;
+    padding: 2px 10px;
+    font-weight: 800;
+}
+
+.tech-card p{
+    font-size: 0.85rem;
+    color: white;
+    line-height: 1.4;
+}
+
+/* TEACHER JOURNEY SECTION */
+
+.teacher-flow{
+    padding: 120px 80px;
+}
+
+.flow-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flow-step{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 120px;
+}
+
+.flow-content{
+    flex: 1;
+}
+
+.step-badge{
+    color: var(--primary);
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+    display: block;
+    text-transform: uppercase;
+}
+
+.flow-content h3{
+    font-size: 3.2rem;
+    margin-bottom: 24px;
+}
+
+.flow-content p{
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+.flow-image{
+    flex: 1.4;
+    border-radius: 40px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+.flow-image img{
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar{
+        padding: 8px 16px;
+    }
+
+    .logo img{
+        height: 28px;
+    }
+
+    .logo-text{
+        font-size: 1.1rem;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .btn-pill{
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+
+    /* HERO */
+    .hero{
+        padding: 60px 16px;
+        min-height: auto;
+    }
+
+    .hero h1{
+        font-size: 2.4rem;
+        line-height: 1.2;
+    }
+
+    .hero p{
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .hero-actions{
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .btn-cta{
+        width: 100%;
+        justify-content: center;
+        padding: 16px;
+        font-size: 1rem;
+    }
+
+    .link-action{
+        font-size: 0.9rem;
+    }
+
+    .floating-card{
+        display: none;
+    }
+
+    .badge{
+        font-size: 0.75rem;
+        padding: 8px 16px;
+    }
+
+    /* FEATURES */
+
+    .features{
+        padding: 80px 16px;
+    }
+
+    .features h2{
+        font-size: 2.2rem;
+    }
+
+    .feature-grid{
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .feature-card{
+        padding: 40px 24px;
+    }
+
+    .feature-card h3{
+        font-size: 1.3rem;
+    }
+
+    /* TECH STACK */
+
+    .tech-stack{
+        margin: 16px;
+        padding: 60px 16px;
+        border-radius: 32px;
+    }
+
+    .tech-stack h2{
+        font-size: 2.2rem;
+    }
+
+    .tech-grid{
+        grid-template-columns: 1fr;
+    }
+
+    /* TEACHER JOURNEY */
+
+    .teacher-flow{
+        padding: 80px 16px;
+    }
+
+    .teacher-flow h2{
+        font-size: 2.4rem;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    .flow-step,
+    .flow-step.reverse{
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 80px;
+    }
+
+    .flow-content{
+        text-align: center;
+    }
+
+    .flow-content h3{
+        font-size: 2rem;
+    }
+
+    .flow-content p{
+        font-size: 1rem;
+    }
+
+    .flow-image{
+        width: 100%;
+    }
+
+    /* PURPLE CTA */
+
+    .purple-section{
+        margin: 16px;
+        padding: 60px 20px;
+        border-radius: 32px;
+    }
+
+    .purple-section h1{
+        font-size: 2rem;
+    }
+
+    .purple-section p{
+        font-size: 1rem;
+    }
+
+    .btn-white{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* FOOTER */
+
+    .main-footer{
+        padding: 60px 16px 30px;
+    }
+
+    .main-footer .footer-grid{
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    .footer-brand p{
+        max-width: 100%;
+    }
+}
+.flow-step.reverse{
+    flex-direction: row-reverse;
+}
+
+/* =========================
+   TABLET RESPONSIVE
+========================= */
+
+@media (min-width: 769px) and (max-width: 1100px){
+
+    .floating-card{
+        display: none;
+    }
+
+    .feature-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tech-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flow-step{
+        gap: 40px;
+    }
+
+    .hero h1{
+        font-size: 3.8rem;
+    }
+
+    .teacher-flow h2{
+        font-size: 3rem;
+    }
+
+    .main-footer .footer-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
